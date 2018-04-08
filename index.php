@@ -13,13 +13,13 @@
 </head>
 <body>
 	<?php include("header.php"); ?>
-  
+	<?php include("nav.php"); ?>
 
 		<!--<div id="content">
 			<h2>This is the Home Page</h2>
 			<p>The home page content.</p>
 		</div>-->
-		<div class="container">
+		<div class="container1">
 
 			<?php
 					require("mysqli_connect.php");
@@ -81,9 +81,9 @@ echo '<div class="well">
           <p class="text-right">By '. $row1['username']. '</p>
           <p>'. $row['content']. '.</p>
           <ul class="list-inline list-unstyled">
-  			<li><span><i class="glyphicon glyphicon-calendar"></i>'. $row['date']. ' </span></li>
+  			<li><span><i class="glyphicon glyphicon-calendar"></i> '. $row['date']. ' </span></li>
             <li>|</li><li> </li>
-            <span><i class="glyphicon glyphicon-comment"></i>'.$row2['total'].'</span>
+            <span><i class="glyphicon glyphicon-comment"></i> '.$row2['total'].'</span>
             </ul>
        </div>
     </div>

@@ -13,8 +13,8 @@
 <body>
     <?php include("header.php"); ?>
 	<?php include("nav.php"); ?>
-    <div id="container1">
-        <div id="content">
+    <div class="container1">
+        <div class="content">
             <?php
             if (!isset($_SESSION['user_level']) or ($_SESSION['user_level'] == 0))
             {

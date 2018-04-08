@@ -13,8 +13,8 @@
 <body>
 	<?php include("header.php"); ?>
 	<?php include("nav.php"); ?>
-	<div id="container1">
-		<div id="content">
+	<div class="container1">
+		<div class="content">
 			<h2>Thank you for registering with us!</h2>
 		</div>
 		<?php include("footer.php"); ?>

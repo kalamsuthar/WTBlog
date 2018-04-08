@@ -13,7 +13,7 @@
 <body>
     <?php include("header.php"); ?>
     <?php include("nav.php"); ?>
-    <div id="container1">
+    <div class="container1">
         <?php
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 require("mysqli_connect.php");
