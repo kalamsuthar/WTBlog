@@ -9,10 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="includes.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-
-
-
 </head>
 <body>
     <?php include("header.php"); ?>
@@ -39,6 +35,7 @@
                     <th>e-mail ID</th>
                     <th>Joined</th>
                     <th>Admin</th>
+                    <th>Remove</th>
                 </tr>
                 <?php
                 require("mysqli_connect.php");
@@ -51,6 +48,7 @@
                         <td>' . $row['email'] . '</td>
                         <td>' . $row['join_date'] . '</td>
                         <td>' . ($row['user_level']==2? 'Yes':'No') . '</td>
+                        <td>' . ($row['user_level']==2? '-': '<button id="user_remove" onclick="removeUser(' . $row['id'] . ')">Remove User</button>') . '</td>
                     </tr>';
                 }
                  ?>
@@ -58,5 +56,11 @@
         </div>
         <?php include("footer.php"); ?>
     </div>
+    <script type="text/javascript">
+    function removeUser(remove_id){
+        var val=remove_id;
+        self.location='remove.php?user=' + val + '&post=';
+    }
+    </script>
 </body>
 </html>

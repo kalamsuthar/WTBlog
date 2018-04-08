@@ -20,8 +20,8 @@
     section{width:100%; float:left;}
     .banner-section{background-image:url("images/banner.jpeg"); background-size:cover; height: 380px; left: 0; position: absolute; top: 0; background-position:0;}
     .post-title-block{padding:100px 0;}
-    .post-title-block h1 {color: #fff; font-size: 85px; font-weight: bold; text-transform: capitalize;}
-    .post-title-block li{font-size:20px; color: #fff;}
+    .post-title-block h1 {color: #000; font-size: 85px; font-weight: bold; text-transform: capitalize;}
+    .post-title-block li{font-size:20px; color: #000;}
     .image-block{float:left; width:100%; margin-bottom:10px;}
 
     </style>
@@ -79,12 +79,6 @@
                   <hr>';
 
               if(isset($_SESSION['user_id'])){
-              /*  $uid = $_SESSION['user_id'];
-                if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                    $content = $_POST['comment_content'];
-                    $q = "INSERT INTO comment (post_id, user_id, content,time_posted) VALUES ($pid, $uid, '$content',NOW())";
-                    $result = mysqli_query($dbcon, $q);
-                }*/
 
 
 

@@ -101,23 +101,23 @@
 	                                 </div>
 	                             </div>
 
-															 <div class="form-group">
-	 																<label for="psword" class=" control-label col-sm-3">Current password</label>
-	 																<div class="col-sm-9">
-	 																		<input type="password" class="form-control" name="psword" id="psword" placeholder="Please input your current password">
-	 																</div>
-	 														</div>
+									 <div class="form-group">
+												<label for="psword" class=" control-label col-sm-3">Current password</label>
+												<div class="col-sm-9">
+														<input type="password" class="form-control" name="psword" id="psword" placeholder="Please input your current password">
+												</div>
+										</div>
 
-															 <div class="form-group">
+									 <div class="form-group">
 	                                 <label for="psword1" class=" control-label col-sm-3">New password</label>
 	                                 <div class="col-sm-9">
-	                                     <input type="password" class="form-control" name="psword1" placeholder="create your new password">
+	                                     <input type="password" class="form-control" name="psword1" placeholder="Enter new password">
 	                                 </div>
 	                             </div>
 	                             <div class="form-group">
 	                                 <label for="psword2" class=" control-label col-sm-3">Confirm password</label>
 	                                 <div class="col-sm-9">
-	                                     <input type="password" class="form-control" name="psword2" placeholder="confirm your new password">
+	                                     <input type="password" class="form-control" name="psword2" placeholder="Re-enter new password">
 	                                 </div>
 	                             </div>
 	                             <div class="form-group">
@@ -130,22 +130,6 @@
 	                     </div>
 	                 </div>
 	             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			</p>
 		</div>
 		<?php include ('footer.php'); ?>
